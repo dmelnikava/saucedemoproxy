@@ -1,0 +1,51 @@
+[2023-03-14 09:28:04] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-14 09:28:04] [1] [INFO] TEST [saucedemoproxy - defaultDynamicModeTest] STARTED at [12:28:04 2023-03-14]
+[2023-03-14 09:28:04] [1] [INFO] INFO: opening url 'https://www.saucedemo.com/'
+[2023-03-14 09:28:08] [1] [INFO] Shutting down proxy server gracefully
+[2023-03-14 09:28:08] [1] [INFO] Closing all channels (graceful)
+[2023-03-14 09:28:08] [1] [INFO] Shutting down server group event loops (graceful)
+[2023-03-14 09:28:11] [1] [INFO] Done shutting down proxy server
+[2023-03-14 09:28:11] [1] [INFO] INFO: opening url 'https://www.saucedemo.com/inventory.html'
+[2023-03-14 09:28:12] [1] [INFO] Seems like proxy was already stopped.
+[2023-03-14 09:28:12] [1] [INFO] Proxy server is already stopped. Cannot re-stop.
+[2023-03-14 09:28:12] [1] [ERROR] TEST [saucedemoproxy - defaultDynamicModeTest] FAILED at [12:28:12 2023-03-14] - Undefined error on open url detected: unknown error: net::ERR_PROXY_CONNECTION_FAILED
+  (Session info: chrome=111.0.5563.64)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'solvds-MacBook-Pro-3.local', ip: 'fe80:0:0:0:c3d:cf1d:a62c:689e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.1', java.version: '11.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [3e8f7ca2de3730e71e6952e45f6b3c5e, get {url=https://www.saucedemo.com/inventory.html}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /var/folders/js/y86fvhp535n...}, goog:chromeOptions: {debuggerAddress: localhost:63085}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(manual, http=127.0.0...., setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e8f7ca2de3730e71e6952e45f6b3c5e
+
+org.testng.Assert.fail(Assert.java:98)
+com.qaprosoft.carina.core.foundation.webdriver.DriverHelper.openURL(DriverHelper.java:175)
+com.qaprosoft.carina.core.foundation.webdriver.DriverHelper.openURL(DriverHelper.java:145)
+com.qaprosoft.carina.core.foundation.webdriver.DriverHelper.open(DriverHelper.java:135)
+com.solvd.saucedemoproxy.SaucedemoProxyTest.defaultDynamicModeTest(ProxySampleTest.java:52)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:806)
+org.testng.TestRunner.run(TestRunner.java:601)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)

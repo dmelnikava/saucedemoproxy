@@ -1,0 +1,19 @@
+[2023-03-14 01:42:28] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-14 01:42:28] [1] [INFO] TEST [saucedemoproxy - checkOrderingCustomerItemsTest] STARTED at [16:42:28 2023-03-14]
+[2023-03-14 01:42:29] [1] [INFO] INFO: opening url 'https://www.saucedemo.com/'
+[2023-03-14 01:42:34] [1] [INFO] INFO: opening url 'https://www.saucedemo.com/inventory.html'
+[2023-03-14 01:42:36] [1] [INFO] INFO: url 'https://www.saucedemo.com/inventory.html' is opened.
+[2023-03-14 01:42:37] [1] [INFO] Element clicked
+[2023-03-14 01:42:38] [1] [INFO] Element clicked
+[2023-03-14 01:42:40] [1] [INFO] PASS: element 'shoppingCart' is clicked.
+[2023-03-14 01:42:40] [1] [INFO] PASS: element 'checkoutBtn' is clicked.
+[2023-03-14 01:42:41] [1] [INFO] PASS: keys 'Ann' are sent to element 'firstnameInputField'.
+[2023-03-14 01:42:42] [1] [INFO] PASS: keys 'Smith' are sent to element 'lastnameInputField'.
+[2023-03-14 01:42:42] [1] [INFO] PASS: keys '234678' are sent to element 'postalcodeInputField'.
+[2023-03-14 01:42:43] [1] [INFO] PASS: element 'continueBtn' is clicked.
+[2023-03-14 01:42:44] [1] [INFO] PASS: element 'finishBtn' is clicked.
+[2023-03-14 01:42:44] [1] [INFO] Shutting down proxy server gracefully
+[2023-03-14 01:42:44] [1] [INFO] Closing all channels (graceful)
+[2023-03-14 01:42:45] [1] [INFO] Shutting down server group event loops (graceful)
+[2023-03-14 01:42:47] [1] [INFO] Done shutting down proxy server
+[2023-03-14 01:42:47] [1] [INFO] TEST [saucedemoproxy - checkOrderingCustomerItemsTest] PASSED at [16:42:47 2023-03-14]
