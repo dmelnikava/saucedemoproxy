@@ -9,28 +9,11 @@ import com.solvd.saucedemoproxy.pages.HomePage;
 import com.solvd.saucedemoproxy.pages.LoginPage;
 import org.openqa.selenium.Cookie;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
-import com.zebrunner.carina.proxy.browserup.ProxyPool;
-import com.zebrunner.carina.utils.R;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 
-import com.browserup.bup.BrowserUpProxy;
-
 public class SaucedemoProxyTest implements IAbstractTest {
-
-    BrowserUpProxy proxy;
-
-    @BeforeMethod(alwaysRun = true)
-    public void startProxy() {
-        R.CONFIG.put("browserup_proxy", "true");
-        R.CONFIG.put("proxy_type", "DYNAMIC", true);
-        R.CONFIG.put("proxy_port", "0", true);
-        getDriver();
-        proxy = ProxyPool.getProxy();
-    }
 
     @Test(description = "Check that success message should become, when customer try to order selected items from the shopping cart.")
     @MethodOwner(owner = "qpsdemo")
